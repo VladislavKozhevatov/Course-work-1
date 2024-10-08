@@ -2,15 +2,15 @@ import java.util.Objects;
 
 public class Employee {
 
+    private static int idGenerator = 1;
     private int id;
-    private String fullName ;
+    private  String fullName ;
     private int department ;
-    private  int salary;
-    private static int idNumber=1;
+    private static int salary;
 
 
     public Employee(String fullName, int department, int salary) {
-        id = idNumber++;
+        id = idGenerator++;
         this.fullName = fullName;
         this.department = department;
         this.salary = salary;
